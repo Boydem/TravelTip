@@ -1,0 +1,61 @@
+/* header */
+.main-header {
+  position: sticky;
+  top: 0;
+  background-color: var(--black);
+  color: var(--white);
+  padding: 0.5em 0;
+  backdrop-filter: blur(16px);
+  box-shadow: 0px 20px 20px -20px var(--black);
+  z-index: 5;
+}
+.main-header .wrapper {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  place-items: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  justify-self: start;
+  font-family: "h";
+  cursor: pointer;
+}
+.logo .fa-location-dot {
+  padding-left: 10px;
+  position: relative;
+  background: -webkit-linear-gradient(
+    120deg,
+    rgb(99, 100, 172),
+    rgb(176, 204, 230),
+    rgb(137, 31, 158)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.main-nav {
+  justify-self: end;
+}
+nav a.nav-link {
+  padding: 0.75em;
+  color: var(--grey);
+  transition: 0.2s color;
+}
+nav a.nav-link:hover {
+  color: var(--white);
+}
+.main-header input[type="search"] {
+  width: 90%;
+  padding: 0.33em 0.66em;
+  border-radius: 3em;
+  background-color: var(--black);
+  color: var(--white);
+  outline: none;
+  border: 1px solid var(--grey);
+  box-shadow: 0px 10px 20px -13px var(--grey);
+  transition: color 0.3s, border 0.3s;
+}
+.main-header input[type="search"]:focus-within {
+  border: 1px solid var(--white);
+}

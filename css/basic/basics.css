@@ -1,0 +1,39 @@
+/* BASICS */
+
+html {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "text";
+}
+body {
+  background-color: var(--clr1);
+  color: var(--white);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+  list-style: none;
+}
+* a {
+  color: inherit;
+  text-decoration: inherit;
+}
+img,
+iframe {
+  width: 100%;
+  display: block;
+}
+
+button {
+  background-color: transparent;
+  color: var(--white);
+  border: 1px solid var(--grey);
+  border-radius: 0.2em;
+  transition: 0.2s background-color;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #000;
+}

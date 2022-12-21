@@ -1,0 +1,65 @@
+/* Locations List */
+
+.locations-list {
+  grid-area: playlist;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  /* place-content: center; */
+  place-items: start;
+  padding: 1em 0;
+}
+
+.loc-item {
+  font-size: 0.85rem;
+  cursor: pointer;
+  width: 100%;
+  padding: 1em;
+  border-radius: 0.2em;
+  border: 1px solid var(--grey);
+  gap: 1em;
+  transition: 0.2s background-color;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas: "info buttons" "time buttons";
+}
+.loc-item > * {
+  max-width: 90%;
+}
+.loc-item p {
+  font-size: 0.85rem;
+  margin: 0;
+  color: var(--desc);
+}
+.loc-item:hover {
+  background-color: var(--black);
+}
+/* .loc-item img {
+    border-radius: 0.2em;
+  } */
+
+.loc-title {
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+.loc-item {
+  font-size: 0.95rem;
+}
+.loc-time {
+  grid-area: time;
+}
+.loc-info {
+  grid-area: info;
+}
+.loc-btns {
+  grid-area: buttons;
+  display: flex;
+  flex-direction: column;
+}
+.loc-btns > * {
+  margin-bottom: 0.5em;
+  width: 30px;
+  height: 30px;
+}

@@ -1,0 +1,59 @@
+/* IMPORTS */
+
+/* SETUP */
+@import url(./setup/font-face.css);
+@import url(./setup/vars.css);
+@import url(./setup/css-reset.css);
+/* BASIC */
+@import url(./basic/helpers.css);
+@import url(./basic/basics.css);
+@import url(./basic/layout.css);
+/* CMPS */
+@import url(./basic/header.css);
+@import url(./basic/main.css);
+@import url(./basic/map.css);
+@import url(./basic/locations.css);
+/* @import url(./basic/footer.css); */
+/* MEDIA QUEIRIES */
+@import url(./basic/media-queries.css);
+
+.modal-wrapper {
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  /* background-color: #fff; */
+  z-index: 55;
+  background-color: rgba(0, 0, 0, 0.39);
+  transition: opacity 0.4s;
+}
+.modal-wrapper.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal {
+  background: var(--black);
+  backdrop-filter: blur(10px);
+  padding: 1em;
+  border-radius: 1em;
+  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.7);
+}
+.modal input[type="text"] {
+  margin-top: 10px;
+  padding: 0.33em 0.66em;
+  border-radius: 3em;
+  background-color: var(--black);
+  color: var(--white);
+  outline: none;
+  border: 1px solid var(--grey);
+  box-shadow: 0px 10px 20px -13px var(--grey);
+  transition: color 0.3s, border 0.3s;
+}
+.modal-btn {
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 3em;
+  background-color: var(--grey);
+}

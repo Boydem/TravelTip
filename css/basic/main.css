@@ -1,0 +1,7 @@
+/* MAIN CONTENT */
+
+/* on mobile */
+.main-content {
+  display: flex;
+  flex-direction: column;
+}

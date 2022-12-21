@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css">
+    <title>TravelTip</title>
+</head>
+
+<body class="main-layout">
+
+    <header class="main-header full main-layout">
+        <div class="wrapper">    
+            <div class="logo">TravelTip<i class="fa-solid fa-location-dot"></i></div>
+            <input oninput="onSearch(this.value)" type="search" name="search" placeholder="Seach location">
+            <nav class="main-nav">
+                <ul class="nav-links flex align-center">
+                    <li><a class="nav-link" href="#"><i class="fa-solid fa-gear"></i></a></li>
+                    <li><a class="nav-link" href="#"><i class="fa-solid fa-user"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="map">
+            <div id="map" style="width: 100%; height: 400px;"></div>
+            <div class="map-btns">
+                <button onclick="onAddMarker()" class="btn-add-marker">Add Marker Speific Location</button>
+                <button onclick="onGetUserPos()" class="btn-user-pos">Get User Position</button>
+                <button onclick="onGetLocs()" class="btn-get-locs">Get Locations</button>
+                <button onclick="onPanTo()" class="btn-pan">Pan Map to Tokyo</button>
+            </div>
+        </section>
+        <div class="locations-list">
+            <article class="loc-item">
+                <h3 class="loc-title">Location</h3>
+                <h6>Location Info</h6>
+                <div class="loc-time">
+                    <span>Created At:</span>
+                    <span>Updated At:</span>
+                </div>
+            </article>
+            <article class="loc-item">
+                <h3 class="loc-title">Location</h3>
+                <h6>Location Info</h6>
+                <div class="loc-time">
+                    <span>Created At:</span>
+                    <span>Updated At:</span>
+                </div>
+                <div class="loc-btns">
+                    <button class="btn-delete"><i class="fa-regular fa-trash-can"></i></button>
+                    <button class="btn-go"><i class="fa-solid fa-location-arrow"></i></button>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <small>Built and designed by Yaron&Noam</small>
+    </footer>
+
+    <div class="modal-wrapper full flex align-center justify-center">
+        <div class="modal">
+            <h3>Enter Location Name</h3>
+                <input type="text" name="locName" id="locName" placeholder="Location Name">
+            <button class="modal-btn"><i class="fa-regular fa-bookmark"></i></button>
+        </div>
+    </div>
+
+    <script type="module" src="js/app.controller.js"></script>
+</body>
+
+</html>

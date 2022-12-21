@@ -1,0 +1,9 @@
+/* FONT FACES */
+@font-face {
+  font-family: "headings-b";
+  src: url(../fonts/RobotoDroidSerif/DroidSerif/DroidSerif-Bold.ttf);
+}
+@font-face {
+  font-family: "text";
+  src: url(../fonts/RobotoDroidSerif/Roboto/Roboto-Regular.ttf);
+}

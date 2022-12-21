@@ -1,0 +1,42 @@
+/* media queries */
+@media (min-width: 1000px) {
+  .main-header .wrapper {
+    display: grid;
+    grid-template-columns: 400px 1fr auto;
+    place-items: center;
+  }
+  .main-content {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+      "locs-list map"
+      "locs-list controlls";
+    column-gap: 1.5em;
+  }
+  .map {
+    padding: 1em 0;
+    height: fit-content;
+    grid-area: map;
+  }
+  .locations-list {
+    grid-area: locs-list;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    /* place-content: center; */
+    place-items: start;
+    padding: 1em 0;
+  }
+  .main-header input[type="search"] {
+    margin-inline-start: 1.5em;
+  }
+}
+
+@media (min-width: 1300px) {
+  .main-header input[type="search"] {
+    width: 50%;
+    margin-inline-start: 1.5em;
+  }
+}

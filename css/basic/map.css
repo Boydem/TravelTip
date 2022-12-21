@@ -1,0 +1,10 @@
+.map {
+  padding: 1em 0;
+  height: fit-content;
+}
+.map-btns {
+  padding: 1em 0;
+}
+.map-btns button {
+  padding: 0.5em;
+}
